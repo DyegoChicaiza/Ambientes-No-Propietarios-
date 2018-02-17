@@ -1,0 +1,17 @@
+.atenciones .busq_atenciones
+{
+	width: 85%;
+	height: 35px;
+}
+
+.atenciones .buscar
+{
+	width: 14%;
+	height: 35px;
+}
+
+h2
+{
+	text-align: center;
+	color: white;
+}
