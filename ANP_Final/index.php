@@ -23,7 +23,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>                
-                <img class="navbar-brand" src="imagenes/cachorro.png" style="height: 100px; width: 100px;">
+                <img class="navbar-brand" src="imagenes/logo.png" style="height: 100px; width: 100px;">
                 <h4>Clinica Veterinaria "San Francisco"</h4>
               </div>
 
@@ -69,13 +69,13 @@
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-				   <img alt="100%x600" data-src="holder.js/100%x600" style="height: 600px; width: 100%; display: block;" src="imagenes/juju.jpg">
+				   <img alt="100%x600" data-src="holder.js/100%x600" style="height: 600px; width: 100%; display: block;" src="imagenes/slider/juju.jpg">
 					<div class="carousel-caption " style="text-align: center; ">
 			            <h3 style="color: black;">Atención las 24 Horas</h3>
 			            </div>
 				</div>  
 				<div class="item">
-				   <img alt="100%x600" data-src="holder.js/100%x600" style="height: 600px; width: 100%; display: block;" src="imagenes/e.png">
+				   <img alt="100%x600" data-src="holder.js/100%x600" style="height: 600px; width: 100%; display: block;" src="imagenes/slider/e.png">
 					<div class="carousel-caption " style="text-align: center; ">
 			           
 			            <h3 style="color: black;">Atención las 24 Horas</h3>
@@ -202,9 +202,4 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="js/validation/jquery.validate.js"></script>
-	<script src="js/validation/validacion.js"></script>
-	<script src="js/validation/additional-methods.min.js"></script>
-    <script src="js/validation/messages_es.min.js"></script>
-	<script src="js/bootstrap.min.js"></script> 
 </html>

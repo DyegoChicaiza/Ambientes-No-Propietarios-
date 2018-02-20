@@ -82,7 +82,7 @@
           <div class="wrapper">
             <h2  class="animated bounceInDown" style="color: red;">Solo personal registrado</h2><br>
               <form class="form-signin" method="POST" action="login.php">       
-                <center><img class="doglogin" src="../imagenes/cachorro.png"></center><br>  
+                <center><img class="doglogin" src="../imagenes/logo.png"></center><br>  
             <input type="text" class="form-control" name="nombre" placeholder="username" required="" autofocus="" /><br>
                 <input type="password" class="form-control" name="contrasena" placeholder="Password" required=""/>      
                 <label class="checkbox">

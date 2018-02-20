@@ -13,12 +13,12 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title> Administración de Veterinaria "San Francisco" </title>
+    <title> Página de bienvenida </title>
     <meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="../estilos/bootstrap.min.css">
-  	<link rel="stylesheet" href="../estilos/estilos2.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/estilos2.css">
     <link rel="stylesheet" href="../estilos/animate.css">
     <link rel="stylesheet" href="../estilos/estilos_admin.css">
  </head>
@@ -40,25 +40,25 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-top" >
           <ul class="nav navbar-nav navbar-right" >
-          	<li class="dropdown" style="width: 250px;">
+            <li class="dropdown" style="width: 250px;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" class="active">Inicio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b >+</b></a>
               <ul class="dropdown-menu" style="width: 250px;">
                 <li><a href="bienvenida.php">Principal</a></li>
-                <li><a href="descripcion.php">Descripcion del Proyecto</a></li>
+                <li><a href="descripcion.php">Descripción Proyecto</a></li>
                 <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
               </ul>
             </li>
             <li class="dropdown" style="width: 250px;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registros &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b >+</b></a>
               <ul class="dropdown-menu" style="width: 250px;">
-                <li><a href="administrativos.php">Administracion del Sistema</a></li>
+                <li><a href="admin_sistema.php">Administracion del Sistema</a></li>
                 <li><a href="profesionales.php">Registro de profesionales</a></li>
                 <li><a href="pacientes.php">Registro de pacientes</a></li>
                 <li><a href="productos.php">Registro de productos</a></li>
               </ul>
             </li>
             <li  style="width: 250px;"><a href="historial.php" target="_blank">Historial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b >+</b></a></li>
-            <li  style="width: 250px;"><a href="reportes.php" target="_blank">Reportes</a></li>
+            <li  style="width: 250px;"><a href="reportes.php" target="_blank">Reportes</a></li>           
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -66,13 +66,34 @@
       <!-- /.container-fluid -->
     </nav>
   </div>
-  <center><img src="../imagenes/admin/medipet-24-horas.jpg" style="display: block; height: 500px; width: 1000px; " id="inicio"></center>
+  
+  <div>
+    <div class="row">
+      <div class="col-md-12">
+        
+      </div>
+      <h2>ESCUELA POLITÉCNICA NACIONAL</h2>
+      <h3>ESCUELA DE FORMACIÓN DE TECNOLOGOS</h3>
+      <hr>
+      <h4>Proyecto Final de Ambientes no Propietarios</h4>
+      <hr>
+      <h4>Integrantes:</h4>
+      <ul>
+        <li>Arias Mishelle</li>
+        <li>Diego Chicaiza</li>
+        <li>Cunalata Cristina</li>
+        <li>Sanchez Jordan</li>
+        <li>Villamarin Jazmin</li>
+      </ul>
+    </div>
+  </div>
+
 </div>
 
 
  </body>
  <script type="module">
-	$('ul.nav li.dropdown').hover(function() {
+  $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);

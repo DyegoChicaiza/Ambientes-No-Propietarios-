@@ -13,14 +13,15 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title> Administración de Veterinaria "San Francisco" </title>
+    <title> Página de bienvenida </title>
     <meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="../estilos/bootstrap.min.css">
-  	<link rel="stylesheet" href="../estilos/estilos2.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/estilos2.css">
     <link rel="stylesheet" href="../estilos/animate.css">
     <link rel="stylesheet" href="../estilos/estilos_admin.css">
+    <script src="../js/jquery.min.js"></script>
  </head>
  <body style="background-color: #D8D8D8;">
     <h3> Bienvenido/a <?php echo strtoupper($nombre); ?> </h3>
@@ -40,11 +41,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-top" >
           <ul class="nav navbar-nav navbar-right" >
-          	<li class="dropdown" style="width: 250px;">
+            <li class="dropdown" style="width: 250px;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" class="active">Inicio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b >+</b></a>
               <ul class="dropdown-menu" style="width: 250px;">
                 <li><a href="bienvenida.php">Principal</a></li>
-                <li><a href="descripcion.php">Descripcion del Proyecto</a></li>
+                <li><a href="descripcion.php">Descripción del Proyecto</a></li>
                 <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
               </ul>
             </li>
@@ -58,7 +59,7 @@
               </ul>
             </li>
             <li  style="width: 250px;"><a href="historial.php" target="_blank">Historial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b >+</b></a></li>
-            <li  style="width: 250px;"><a href="reportes.php" target="_blank">Reportes</a></li>
+            <li  style="width: 250px;"><a href="reportes.php" target="_blank">Reportes</a></li>           
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -66,23 +67,68 @@
       <!-- /.container-fluid -->
     </nav>
   </div>
-  <center><img src="../imagenes/admin/medipet-24-horas.jpg" style="display: block; height: 500px; width: 1000px; " id="inicio"></center>
+<!--apertura para las acciones-->
+<div  id="profesionales">
+  <div>
+    <h2>CONTROL DE PROFESIONALES</h2>
+  </div>
+  <hr>
+  <!--apertura para el crud-->
+  <?php include "crud_prof.php"; ?>
+  <!--cierre para el crud-->
+  <!---->
+  <div class="container">
+<div class="row">
+<div class="col-md-12">
+    <h2>VER REGISTROS</h2>
+<!-- Button trigger modal -->
+  <a data-toggle="modal" href="#myModal" class="btn btn-default">Agregar</a>
+<br><br>
+
+
+<?php include "tabla_prof.php"; ?>
 </div>
+</div>
+</div>
+</div>
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Agregar</h4>
+        </div>
+        <div class="modal-body">
+<form role="form" method="post" action="agregar_prof.php">
+  <div class="form-group">
+    <label for="nombreProfesional">Nombre del Profesional</label>
+    <input type="text" class="form-control" name="nombreProfesional" required>
+  </div>
+  <div class="form-group">
+    <label for="cedulaProfesional">Cedula del Profesional</label>
+    <input type="text" class="form-control" name="cedulaProfesional" required>
+  </div>
+  <div class="form-group">
+    <label for="ocupacion">ocupacion</label>
+    <input type="text" class="form-control" name="ocupacion" >
+  </div>
 
+  <button type="submit" class="btn btn-default">Agregar</button>
+</form>
+        </div>
 
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
  </body>
  <script type="module">
-	$('ul.nav li.dropdown').hover(function() {
+  $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 </script>
-  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-  <script src="../js/display.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </html>
