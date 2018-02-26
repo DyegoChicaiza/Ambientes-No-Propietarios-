@@ -6,9 +6,9 @@ if(!empty($_GET)){
 			$sql = "DELETE FROM administrativo WHERE id=".$_GET["id"];
 			$query = $con->query($sql);
 			if($query!=null){
-				print "<script>alert(\"Eliminado exitosamente.\");window.location='administrativo.php';</script>";
+				print "<script>alert(\"Eliminado exitosamente.\");window.location='administrativos.php';</script>";
 			}else{
-				print "<script>alert(\"No se pudo eliminar.\");window.location='administrativo.php';</script>";
+				print "<script>alert(\"No se pudo eliminar.\");window.location='administrativos.php';</script>";
 
 			}
 }
