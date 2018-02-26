@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../estilos/estilos_admin.css">
  </head>
  <body style="background-color: #D8D8D8;">
-    <h3> Bienvenido/a <?php echo strtoupper($nombre); ?> </h3>
+    <h3 style="color: white;"> Bienvenido/a <?php echo strtoupper($nombre); ?> </h3>
 <div class="body-wrap">
   <div class="container">
     <nav class="navbar navbar-inverse" role="navigation">
