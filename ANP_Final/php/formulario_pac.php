@@ -16,7 +16,7 @@ while ($r=$query->fetch_object()){
 
 <?php if($paciente!=null):?>
 
-<form role="form" method="post" action="actualizar_pac.php" class="form-horizontal" >
+<form role="form" method="post" action="actualizar_pac.php">
   <div class="form-group">
     <label for="nombrePaciente">Nombre del Paciente</label>
     <input type="text" class="form-control" value="<?php echo $paciente->nombrePaciente; ?>" name="nombrePaciente" required>
@@ -55,12 +55,12 @@ while ($r=$query->fetch_object()){
   </div>
   <div class="form-group">
     <label for="fechaRegistro">Fecha de Registro</label>
-    <input type="date" class="form-control" value="<?php echo $paciente->fechaRegistro; ?>" name="fechaRegistro" >
+    <input type="text" class="form-control" value="<?php echo $paciente->fechaRegistro; ?>" name="fechaRegistro" >
   </div>
 
 
 <input type="hidden" name="id" value="<?php echo $paciente->id; ?>">
-  <Center><button type="submit" class="btn btn-default">Actualizar</button></Center>
+  <button type="submit" class="btn btn-default">Actualizar</button>
 </form>
 <?php else:?>
   <p class="alert alert-danger">404 No se encuentra</p>
