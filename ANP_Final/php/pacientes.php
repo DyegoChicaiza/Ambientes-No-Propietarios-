@@ -111,7 +111,7 @@
             </div>
             <div class="form-group">
               <label for="fechaNacimiento">Fecha de Nacimiento</label>
-              <input type="text" class="form-control" name="fechaNacimiento" required />
+              <input type="date" class="form-control" name="fechaNacimiento" required />
             </div>
             <div class="form-group">
               <label for="especie">Especie</label>
@@ -150,8 +150,8 @@
               <input type="text" class="form-control" name="correoDueno" required />
             </div>
             <div class="form-group">
-              <label for="fechaRegistro">Fecha</label>
-              <input type="text" class="form-control" name="fechaRegistro" required />
+              <label for="fechaRegistro">Fecha De Ingreso</label>
+              <input type="date" class="form-control" name="fechaRegistro" required />
             </div>
 
             <button type="submit" class="btn btn-default">Agregar</button>

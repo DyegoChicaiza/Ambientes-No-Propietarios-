@@ -24,7 +24,7 @@
     <script src="../js/jquery.min.js"></script>
  </head>
  <body style="background-color: #D8D8D8;">
-    <h3 style="color: white;"> Bienvenido/a <?php echo strtoupper($nombre); ?> </h3>
+    <center><h3 style="color: white;"> Bienvenido/a <?php echo strtoupper($nombre); ?> </h3></center>
 <div class="body-wrap">
   <div class="container">
     <nav class="navbar navbar-inverse" role="navigation">
@@ -79,7 +79,7 @@
   <!---->
   <div class="container">
     <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 ">
         <h2>EDITAR</h2>
     <?php include "formulario_pac.php";?>
     </div>
